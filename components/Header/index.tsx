@@ -39,13 +39,13 @@ const Header = () => {
     <>
       <header
         className={`header top-0 left-0 z-40 flex w-full items-center bg-transparent ${sticky
-            ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
-            : "absolute"
+          ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
+          : "absolute"
           }`}
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+            {/* <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
                 className={`header-logo block w-full ${sticky ? "py-5 lg:py-2" : "py-8"
@@ -66,7 +66,7 @@ const Header = () => {
                   className="hidden w-full dark:block"
                 />
               </Link>
-            </div>
+            </div> */}
             <div className="flex w-full items-center justify-between px-4">
               <div>
                 <button
@@ -91,8 +91,8 @@ const Header = () => {
                 <nav
                   id="navbarCollapse"
                   className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white py-4 px-6 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
-                      ? "visibility top-full opacity-100"
-                      : "invisible top-[120%] opacity-0"
+                    ? "visibility top-full opacity-100"
+                    : "invisible top-[120%] opacity-0"
                     }`}
                 >
                   <ul className="block lg:flex lg:space-x-12">
@@ -107,7 +107,7 @@ const Header = () => {
                           </Link>
                         ) : (
                           <>
-                            <a
+                            {/* <a
                               onClick={() => handleSubmenu(index)}
                               className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
                             >
@@ -134,7 +134,7 @@ const Header = () => {
                                   {submenuItem.title}
                                 </Link>
                               ))}
-                            </div>
+                            </div> */}
                           </>
                         )}
                       </li>
@@ -142,7 +142,7 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              {/* <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
                   href="/signin"
                   className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block"
@@ -158,7 +158,7 @@ const Header = () => {
                 <div>
                   <ThemeToggler />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
