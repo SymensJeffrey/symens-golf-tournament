@@ -3,7 +3,7 @@ import SectionTitle from "../Common/SectionTitle";
 const Features = () => {
 
   const events = [
-    { year: 2025, title: "????????????????", text: "Location: Mississippi National, Red Wing", bgColor: "bg-dark", textColor: "text-white", position: "right" },
+    { year: 2025, title: "???????????????", text: "Location: Mississippi National, Red Wing", bgColor: "bg-dark", textColor: "text-white", position: "right" },
     { year: 2024, title: "Steph Hill, Bryce Symens, Breanna Symens, Drew", text: "Location: Links at Northfork, Ramsey", bgColor: "bg-primary/[0.8]", textColor: "text-white", position: "left" },
     { year: 2023, title: "Steph Hill, Bryce Symens, Jacob Symens, Joshua Symens, Jenna Kelly", text: "Location: Bull Rush, Rush City", bgColor: "bg-dark", textColor: "text-white", position: "right" },
     { year: 2022, title: "Jeff Hill, Dean Symens, Julie, Bryce Symens", text: "Location: Bunker Hills, Coon Rapids", bgColor: "bg-primary/[0.8]", textColor: "text-white", position: "left" },
