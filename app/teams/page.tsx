@@ -57,7 +57,7 @@ const TeamPage = () => {
         {/* Available Players Section */}
         <div>
           <h2 className="text-2xl font-semibold mb-6">Available Players</h2>
-          <ul className="space-y-4">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {availablePlayers.map(player => (
               <li
                 key={player.id}
@@ -71,17 +71,17 @@ const TeamPage = () => {
                   />
                   <span className="text-sm">{player.name}</span>
                 </div>
-                <div className="flex items-center space-x-1 text-sm leading-none">
+                <div className="flex items-center gap-1 text-sm">
                   <TrophyIcon className="w-5 h-5 text-yellow-400" />
-                  <span className="align-middle translate-y-[1px]">{player.wins}</span>
+                  <span className="">{player.wins}</span>
                 </div>
-                <div className="text-sm">
-                  Goals: {player.statistics.goals}, Assists: {player.statistics.assists}
-                </div>
+                {/* <div className="text-sm">
+                  {player.statistics}
+                </div> */}
                 <select
                   onChange={e => draftPlayer(player.id, Number(e.target.value))}
                   defaultValue=""
-                  className="bg-white text-black border rounded px-4 py-2 text-sm transition-all hover:bg-gray-100"
+                  className="bg-primary text-white border-none rounded px-4 py-2 text-sm transition-all hover:bg-gray-100"
                 >
                   <option value="" disabled>Select Team</option>
                   {teams.map(team => (
