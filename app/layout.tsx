@@ -20,7 +20,7 @@ export default function RootLayout({
       <head />
 
       <body className="dark:bg-black">
-        <Providers children={undefined}>
+        <Providers>
           <Header />
           {children}
           <ScrollToTop />
