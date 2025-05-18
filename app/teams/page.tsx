@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import { players as initialPlayers } from '@/data/players';
 import { teams as initialTeams } from '@/data/teams';
-import { TrophyIcon } from '@heroicons/react/20/solid'; // Import the trophy icon
+import { TrophyIcon } from '@heroicons/react/20/solid';
+import Image from 'next/image';
 
 type Player = (typeof initialPlayers)[number];
 type Team = typeof initialTeams[number];
@@ -64,9 +65,11 @@ const TeamPage = () => {
                 className="flex items-center justify-between p-4 rounded-lg bg-dark/60 shadow-sm hover:bg-dark/70 transition-all"
               >
                 <div className="flex items-center space-x-4">
-                  <img
+                  <Image
                     src={player.profileImage}
                     alt={player.name}
+                    width={48}
+                    height={48}
                     className="w-12 h-12 rounded-full object-cover"
                   />
                   <span className="text-sm">{player.name}</span>
